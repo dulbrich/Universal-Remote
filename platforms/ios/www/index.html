@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REMOTE</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="remote.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div id='controller'>
+		<div id='TV_REMOTE'>
+			<div id='power' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_POWER")'>
+				<div id='num'><div id='txt'>PWR</div></div>
+			</div>
+			<div id='hdmi' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "HDMI")'>
+				<div id='num'><div id='txt'>HDMI</div></div>
+			</div>
+			<div id='av' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "AV")'>
+				<div id='num'><div id='txt'>AV</div></div>
+			</div>
+			<div id='input' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "INPUT")'>
+				<div id='num'><div id='txt'>INPUT</div></div>
+			</div>
+			<div id='menu' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_MENU")'>
+				<div id='num'><div id='txt'>MENU</div></div>
+			</div>
+			<div id='up' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_UP")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='down' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_DOWN")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='left' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_LEFT")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='right' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_RIGHT")'>
+				<div id='num'><div id='txt'>&gt;</div></div>
+			</div>
+			<div id='volume_up' ontouchstart='sendIRCommand("SEND_START", "Vizio", "KEY_VOLUMEUP")' ontouchend='sendIRCommand("SEND_STOP", "Vizio", "KEY_VOLUMEUP")'>
+				<div id='num'><div id='txt'>+</div></div>
+			</div>
+			<div id='volume_down' ontouchstart='sendIRCommand("SEND_START", "Vizio", "VOL_DWN")' ontouchend='sendIRCommand("SEND_STOP", "Vizio", "VOL_DWN")'>
+				<div id='num'><div id='txt'>-</div></div>
+			</div>
+			<div id='mute' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_MUTE")'>
+				<div id='num'><div id='txt'>MUTE</div></div>
+			</div>
+		</div>
+		<div id="SURROUND_SOUND">
+			<div id='power' ontouchstart='sendIRCommand("SEND_ONCE", "Sherwood", "KEY_POWER")'>
+				<div id='num'><div id='txt'>PWR</div></div>
+			</div>
+			<div id='hdmi' ontouchstart='sendIRCommand("SEND_ONCE", "Sherwood", "KEY_SLEEP")'>
+				<div id='num'><div id='txt'>&#9789;</div></div>
+			</div>
+			<div id='volume_up' ontouchstart='sendIRCommand("SEND_START", "Sherwood", "KEY_VOLUMEUP")' ontouchend='sendIRCommand("SEND_STOP", "Sherwood", "KEY_VOLUMEUP")'>
+				<div id='num'><div id='txt'>+</div></div>
+			</div>
+			<div id='volume_down' ontouchstart='sendIRCommand("SEND_START", "Sherwood", "KEY_VOLUMEDOWN")' ontouchend='sendIRCommand("SEND_STOP", "Sherwood", "KEY_VOLUMEDOWN")'>
+				<div id='num'><div id='txt'>-</div></div>
+			</div>
+			<div id='mute' ontouchstart='sendIRCommand("SEND_ONCE", "Sherwood", "KEY_MUTE")'> 
+				<div id='num'><div id='txt'>MUTE</div></div>
+			</div>
+		</div>
+		<div id="VCR_REMOTE">
+			<div id='power' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_POWER")'>
+				<div id='num'><div id='txt'>PWR</div></div>
+			</div>
+			<div id='hdmi' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_PLAY")'>
+				<div id='num'><div id='txt'>PLAY</div></div>
+			</div>
+			<div id='menu' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "pause/still")'>
+				<div id='num'><div id='txt'>PAUSE</div></div>
+			</div>
+			<div id='volume_up' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_STOP")'>
+				<div id='num'><div id='txt'>&#9744;</div></div>
+			</div>
+			<div id='mute' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_REWIND")'>
+				<div id='num'><div id='txt'>REW</div></div>
+			</div>
+			<div id='volume_down' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_FASTFORWARD")'>
+				<div id='num'><div id='txt'>FF</div></div>
+			</div>
+		</div>
+		<div id="UNI_REMOTE">
+			<!-- <div id='volume_up' ontouchstart='isOn = 1; universalSoundUp();' ontouchend='isOn = 0;'>
+				<div id='num'><div id='txt'>+</div></div>
+			</div>
+			<div id='volume_down' ontouchstart='isOn = 1; universalSoundDown();' ontouchend='isOn = 0;'>
+				<div id='num'><div id='txt'>-</div></div>
+			</div> -->
+		</div>
+		<div id="BLURAY_REMOTE">
+			<div id='power' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_POWER")'>
+				<div id='num'><div id='txt'>PWR</div></div>
+			</div>
+			<div id='hdmi' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_PLAY")'>
+				<div id='num'><div id='txt'>PLAY</div></div>
+			</div>
+			<div id='menu' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "pause/still")'>
+				<div id='num'><div id='txt'>PAUSE</div></div>
+			</div>
+			<div id='volume_up' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_STOP")'>
+				<div id='num'><div id='txt'>&#9744;</div></div>
+			</div>
+			<div id='mute' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_REWIND")'>
+				<div id='num'><div id='txt'>REW</div></div>
+			</div>
+			<div id='volume_down' ontouchstart='sendIRCommand("SEND_ONCE", "G0247AJ", "KEY_FASTFORWARD")'>
+				<div id='num'><div id='txt'>FF</div></div>
+			</div>
+			<div id='up' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_UP")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='down' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_DOWN")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='left' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_LEFT")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='right' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_RIGHT")'>
+				<div id='num'><div id='txt'>&gt;</div></div>
+			</div>
+		</div>
+		<div id='APPLETV_REMOTE'>
+			<div id='up' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_UP")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='down' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_DOWN")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='left' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_LEFT")'>
+				<div id='num'><div id='txt'>&lt;</div></div>
+			</div>
+			<div id='right' ontouchstart='sendIRCommand("SEND_ONCE", "Vizio", "KEY_RIGHT")'>
+				<div id='num'><div id='txt'>&gt;</div></div>
+			</div>
+		</div>
+	</div>
+	<div id='bottom'>
+		<center>
+			<div id="shelfButton" ontouchstart='toggleShelf()'>&mdash;</div>
+			<div id='tv' ontouchstart="toggle_TV_REMOTE()">
+				<div id='num'><div id='txt'>TV</div></div>
+			</div>
+			<div id='sound' ontouchstart="toggle_SURROUND_SOUND()">
+				<div id='num'><div id='txt' >AUX</div></div>
+			</div>
+			<div id='dvd' ontouchstart="firstMacro()">
+				<div id='num'><div id='txt'>&#9782;</div></div>
+			</div>
+			<div id='vcr' ontouchstart='toggle_VCR_REMOTE();'>
+				<div id='num'><div id='txt'>VCR</div></div>
+			</div>
+			<div id='universal' ontouchstart="toggle_UNI_REMOTE()">
+				<div id='num'><div id='txt'>UNI</div></div>
+			</div>
+			<div id='bluray' ontouchstart='toggle_BLURAY_REMOTE()'>
+				<div id='num'><div id='txt'>BLU</div></div>
+			</div>
+			<div id='appleTV' ontouchstart='toggle_APPLETV_REMOTE()'>
+				<div id='num'><div id='txt'><img src='img/apple.png' height='14' width='14' />tv</div></div>
+			</div>
+		</center>
+	</div>
+</body>
+
+</html>

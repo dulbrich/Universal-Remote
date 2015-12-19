@@ -1,0 +1,477 @@
+body {
+	background-color: gray;
+	background-image: url("img/congruent_pentagon.png");
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#controller {
+	background-color: #00FFFB;
+	position:fixed;
+	top:20px;
+	left: 0px;
+	width:100%;
+    margin: 0 auto;
+	height: 550px;
+	color: black;
+	overflow-x: hidden;
+	-webkit-user-select: none;
+	background-image: url("img/footer_lodyas.png");
+}
+
+#num {
+    border: 1px solid #00FFFB;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    background-color: rgba(38,38,38, 0.0);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px auto;
+    /*-webkit-transition: 0 1s;*/
+    -webkit-transition-property: background-color;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transition-duration: 0.5s;
+}
+
+#num:active {
+	background-color: #00FFFB;
+	-webkit-transition: 0;
+}
+
+#txt {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    /*font-family: 'Lato' , sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+    line-height: 30px;
+    color: #00FFFB;
+}
+
+#TV_REMOTE {
+	position:fixed;
+	top:40px;
+	left: 0px;
+	width:100%;
+    margin: 0 auto;
+	height: 580px;
+	color: black;
+	overflow-x: hidden;
+	display: none;
+	-webkit-user-select: none;
+}
+
+#SURROUND_SOUND {
+	position:fixed;
+	top:40px;
+	left: 0px;
+	width:100%;
+    margin: 0 auto;
+	height: 580px;
+	color: black;
+	overflow-x: hidden;
+	display: none;
+	-webkit-user-select: none;
+}
+
+#VCR_REMOTE {
+	position:fixed;
+	top:40px;
+	left: 0px;
+	width:100%;
+    margin: 0 auto;
+	height: 580px;
+	color: black;
+	overflow-x: hidden;
+	display: none;
+	-webkit-user-select: none;
+}
+
+#UNI_REMOTE {
+	position:fixed;
+	top:40px;
+	left: 0px;
+	width:100%;
+    margin: 0 auto;
+	height: 580px;
+	color: black;
+	overflow-x: hidden;
+	display: none;
+	-webkit-user-select: none;
+}
+
+#BLURAY_REMOTE {
+	position: fixed;
+	top:40px;
+	left: 0px;
+	width:100%;
+    margin: 0 auto;
+	height: 580px;
+	color: black;
+	overflow-x: hidden;
+	display: none;
+	-webkit-user-select: none;
+}
+
+#APPLETV_REMOTE {
+	position: fixed;
+	top:40px;
+	left: 0px;
+	width:100%;
+    margin: 0 auto;
+	height: 580px;
+	color: black;
+	overflow-x: hidden;
+	display: none;
+	-webkit-user-select: none;
+}
+
+#power {
+	/*background-color: yellow;*/
+	position: fixed;
+	top: 40px;
+	left: 0px;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#hdmi {
+	/*background-color: orange;*/
+	position: fixed;
+	top: 40px;
+	left: 25%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#av {
+	/*background-color: purple;*/
+	position: fixed;
+	top: 40px;
+	left: 50%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#input {
+	/*background-color: pink;*/
+	position: fixed;
+	top: 40px;
+	left: 75%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#menu {
+	/*background-color: #339966;*/
+	position: fixed;
+	top: 140px;
+	left: 0px;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#up {
+	/*background-color: gray;*/
+	position: fixed;
+	top: 140px;
+	left: 50%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+	-webkit-transform: rotate(90.0deg);
+}
+
+#down {
+	/*background-color: lime;*/
+	position: fixed;
+	top: 240px;
+	left: 50%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+	 -webkit-transform: rotate(-90.0deg);
+}
+
+#left {
+	/*background-color: #CC0033;*/
+	position: fixed;
+	top: 140px;
+	left: 75%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#right {
+	/*background-color: #FFCC00;*/
+	position: fixed;
+	top: 240px;
+	left: 75%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#volume_up {
+	/*background-color: white;*/
+	position: fixed;
+	top: 140px;
+	left: 25%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+	-webkit-user-select: none;
+}
+
+#volume_down {
+	/*background-color: #00FFFF;*/
+	position: fixed;;
+	top: 240px;
+	left: 25%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+	-webkit-user-select: none;
+}
+
+#v_down {
+	/*background-color: #00FFFF;*/
+	position: fixed;;
+	top: 240px;
+	left: 25%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#s_down {
+	/*background-color: #00FFFF;*/
+	position: fixed;;
+	top: 240px;
+	left: 25%;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#mute {
+	/*background-color: #FF33CC;*/
+	position: fixed;
+	top: 240px;
+	left: 0px;
+	width: 25%;
+	margin: 0 auto;
+	height: 15%;
+	overflow-x: hidden;
+}
+
+#bottom {
+	background-color: rgb(38,38,38);
+	position: fixed;
+	top: 550px;
+	left: 0px;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	overflow-x: hidden;
+	-webkit-user-select: none;
+	border-top:solid gray 1px;
+	background-image: url("img/footer_lodyas.png");
+}
+
+@-webkit-keyframes shelfUp {
+	from { top: 550px; }
+	to { top: 450px; }
+}
+
+@-webkit-keyframes shelfDown {
+	from { top: 450px; }
+	to { top: 550px; }
+}
+
+#shelfButton {
+	/*background-color: gray;*/
+	position: fixed;
+	color: #00FFFB;
+	/*color: gray;*/
+	text-align: center;
+	top: 550px;
+	left: 42.5%;
+	width: 15%;
+	height: 30px;
+	overflow-x: hidden;
+	z-index: 20;
+}
+
+@-webkit-keyframes shelfButtonUp {
+	from { top: 550px; }
+	to { top: 450px; }
+}
+
+@-webkit-keyframes shelfButtonDown {
+	from { top: 450px; }
+	to { top: 550px; }
+}
+
+#tv {
+	/*background-color: red;*/
+	position: fixed;
+	top: 560px;
+	left: 0px;
+	width: 25%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes tvUp {
+	from { top: 560px; }
+	to { top: 460px; }
+}
+
+@-webkit-keyframes tvDown {
+	from { top: 460px; }
+	to { top: 560px; }
+}
+
+#sound {
+	/*background-color: green;*/
+	position: fixed;
+	top: 560px;
+	left:25%;
+	width: 25%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes soundUp {
+	from { top: 560px; }
+	to { top: 460px; }
+}
+
+@-webkit-keyframes soundDown {
+	from { top: 460px; }
+	to { top: 560px; }
+}
+
+#dvd {
+	/*background-color: white;*/
+	position: fixed;
+	top: 560px;
+	left: 50%;
+	width: 25%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes dvdUp {
+	from { top: 560px; }
+	to { top: 460px; }
+}
+
+@-webkit-keyframes dvdDown {
+	from { top: 460px; }
+	to { top: 560px; }
+}
+
+#vcr {
+	/*background-color: #33ccff;*/
+	position: fixed;
+	top: 560px;
+	left: 75%;
+	width: 25%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes vcrUp {
+	from { top: 560px; }
+	to { top: 460px; }
+}
+
+@-webkit-keyframes vcrDown {
+	from { top: 460px; }
+	to { top: 560px; }
+}
+
+#universal {
+	position: fixed;
+	top: 660px;
+	left: 75%;
+	width: 25%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes universalUp {
+	from { top: 660px; }
+	to { top: 560px; }
+}
+
+@-webkit-keyframes universalDown {
+	from { top: 560px; }
+	to { top: 660px; }
+}
+
+#bluray {
+	position: fixed;
+	top: 660px;
+	left: 50%;
+	width: 25%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes blurayUp {
+	from { top: 660px; }
+	to { top: 560px; }
+}
+
+@-webkit-keyframes blurayDown {
+	from { top: 560px; }
+	to { top: 660px; }
+}
+
+#appleTV {
+	position: fixed;
+	top: 660px;
+	left: 25%;
+	width: 25%;
+	height: 100px;
+	margin: 0 auto;
+	/*background-image: url('img/apple.png');
+	background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: 35px 33px; */
+}
+
+@-webkit-keyframes appleTVUp {
+	from { top: 660px; }
+	to { top: 560px; }
+}
+
+@-webkit-keyframes appleTVDown {
+	from { top: 560px; }
+	to { top: 660px; }
+}
